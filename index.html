@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 0.6875rem; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      /* max-height: 100vh; */
+      margin: 0;
+      flex-direction: column;
+      gap: 20px;
+      font-family: 'roboto', sans-serif;
+      background-color: rgb(255, 230, 71);
+
+    }
+
+    .main-content {
+      padding: 10px;
+      
+    }
+    .main-card {
+      margin: 12.5rem;
+      background: white;
+      border-top: 1px solid black;
+      border-bottom: 7px solid black;
+      border-right: 7px solid black;
+      border-left: 1px solid black;
+      border-radius: 20px;
+      max-width: 20rem;
+      box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5);
+      display: flex;
+      flex-direction: column;
+      
+    }
+
+    .main-image {
+      width: 100%;
+      /* padding: 10px; */
+      border-radius: 20px;
+      display: inline-block;
+      margin-bottom: 8px;
+      
+    }
+
+    /* .learn-section {
+      background-color: rgb(255, 230, 71);
+      display: inline-block;
+      padding: 5px 8px;
+      border-radius: 5px;
+    } */
+
+    .learn-btn {
+      display: inline-block;
+      padding: 5px 8px;
+      border-radius: 5px;
+      border: 1px solid rgb(255, 230, 71);
+      background-color: rgb(255, 230, 71);
+      font-weight: 700;
+    }
+
+    a {
+      text-decoration: none;
+      color: #000;
+    }
+
+    .learn-btn:hover {
+      background-color: rgb(248, 232, 125);
+      
+    }
+
+
+
+    .learn-word {
+      font-weight: 700;
+    }
+
+    .paragraph {
+      font-size: 20px;
+      font-weight: 700;
+    }
+
+    .descript {
+      color: rgb(120, 120, 120);
+    }
+
+    .profile {
+      list-style-type: none;
+      display: flex;
+      
+      flex-direction: row;
+      align-items: center;
+      gap: 10px;
+      
+    }
+
+    .user-profile {
+      width: 10%;
+    }
+
+    .user-name {
+      font-weight: 700;
+    }
+
+    
+
+
+  </style>
+</head>
+<body>
+  <div class="main-card">
+    <div class="main-content">
+
+      <img src="assets/images/illustration-article.svg" alt="A code tag image" class="main-image">
+  
+      <div class="learn-section">
+        <button class="learn-btn"><a href="https://coursera.org/share/087706b903681dc6af625ac0bfd0214a" target="_blank">Learning</a></button>
+      </div>
+  
+      <div class="date-publish">
+        <p>Published 21 Dec 2023</p>
+      </div>
+  
+      <div class="head">
+        <p class="paragraph">HTML & CSS foundations</p>
+      </div>
+  
+      <div class="description">
+        <p class="descript">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+      </div>
+  
+      <div class="profile">
+        
+          <img src="assets/images/image-avatar.webp" alt="User Profile" class="user-profile"></li>
+          <span class="user-name">Greg Hooper</span>
+        
+      </div>
+
+    </div>
+  </div>
+    
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Akayezu Germain</a>.
+  </footer>
+
+  
+</body>
+</html>
